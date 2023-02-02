@@ -1,0 +1,73 @@
+@media (max-width: 1400px) {
+    
+    /* Menu queries */
+
+    .menu-list ul {
+        font-size: 23px;
+    }
+
+    /* Homa page querys */
+
+    .flexbox-home-page {
+        display: block;
+    }
+
+    .home-page-img {
+        margin: 0 auto;
+    }
+
+    .home-page-img img {
+        width: 80%;
+    }
+
+    .home-page-text {
+        margin: 0 auto;
+    }
+
+    .home-page-text-img img {
+        width: 50%;
+        animation: none;
+    }
+
+    .home-page-text-img img:hover {
+        width: 32%;
+    }
+}
+
+@media (max-width: 450px) {
+    
+    /*Menu queries */
+
+    .menu img {
+        max-height: 30px;
+        left: 20px;
+        top: 20px;
+    }
+
+    .menu h1 {
+        font-size: 25px;
+    }
+
+    .menu-list {
+        margin-top: 24px;
+        line-height: 100px;
+        height: 100%;
+        width: 150px;
+    }
+
+    .menu-list ul {
+        display: block;
+        text-align: center;
+        width: 150px;
+    }
+
+    /* Home page queries */
+
+    .home-page-text {
+        font-size: 25px;
+    }
+
+    .home-page-text .name {
+      font-size: 35px;
+    }
+}

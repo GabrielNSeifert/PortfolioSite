@@ -1,0 +1,173 @@
+/* Pattern Styles  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Satisfy', cursive;
+}
+
+.section {
+    min-height: 100vh;
+    background-color: black;
+    border-bottom: 1px solid white;
+}
+
+/* Menu Styles */
+
+.menu {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid black;
+    background-color: black;
+    color: rgb(27, 252, 121);
+    border-bottom: 1px solid rgb(27, 252, 121);
+}
+
+.menu h1 {
+    font-size: 35px;
+    padding-top: 20px;
+    text-align: center;
+    transition: .5s;
+}
+
+.menu h1:hover {
+    color: grey;
+}
+
+.menu img {
+    background-color: rgb(27, 252, 121);
+    position: absolute;
+    max-height: 40px;
+    padding: 5px;
+    left: 90px;
+    top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .5s ease-in;
+}
+
+.menu img:hover {
+    background-color: rgb(204, 204, 204);
+}
+
+
+.menu-list {
+    display: none;
+    position: fixed;
+    margin-top: 9px;
+    height: 80px;
+    width: 100%;
+    color: black;
+    background-color: rgb(27, 252, 121, 0.85);
+}
+
+.menu-list ul {
+    display: flex;
+    width: 470px;
+    margin: 20px auto;
+    font-size: 25px;
+    font-weight: 1000;
+    list-style: none;
+    cursor: pointer;
+}
+
+.menu-list ul li {
+    margin-right: 20px;
+}
+
+.menu-list ul li:hover {
+    color: grey;
+    transition: .5s ease-in;
+}
+
+/*   Home Page Styles     */
+
+.home-page {
+    border: 1px solid black;
+}
+
+.flexbox-home-page {
+    padding-top: 80px;
+    display: flex;
+    min-height: 110vh;
+}
+
+.home-page-text {
+    color: white;
+    margin: auto 0 auto auto;
+    width: 40%;
+    text-align: center;
+    font-size: 50px;
+}
+
+.home-page-text .name {
+    color: rgb(27, 252, 121);
+    font-size: 65px;
+}
+
+.home-page-text-img {
+    margin-top: 35px;
+    min-height: 300px;
+
+}
+
+.home-page-text-img img {
+    width: 20%;
+    margin: 20px;
+    border-radius: 20px;
+    animation: sizeChange 4s infinite linear;
+}
+
+.home-page-img div{
+    height: 160px;
+    width: 20px;
+}
+
+@keyframes sizeChange {
+
+    0% {
+        width: 20%;
+    }
+
+    50% {
+        width: 22%;
+
+    }
+
+    100% {
+        width: 20%;
+    }
+
+}
+
+.home-page-img {
+    margin: auto auto auto 0;
+    width: 40%;
+    text-align: center;
+}
+
+.home-page-img img {
+    width: 65%;
+    border-radius: 1000px;
+    border: 10px solid rgb(27, 252, 121);
+    animation: ColorChange 4s infinite linear;
+}
+
+@keyframes ColorChange {
+
+    0% {
+        border: 10px solid rgb(27, 252, 121);
+    }
+
+    50% {
+        border: 10px solid rgb(0, 92, 38);
+    }
+
+
+    100% {
+        border: 10px solid rgb(27, 252, 121);
+    }
+
+}
