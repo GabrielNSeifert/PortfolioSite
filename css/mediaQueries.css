@@ -6,6 +6,10 @@
         font-size: 23px;
     }
 
+    .menu h1 {
+        font-size: 30px;
+    }
+
     /* Homa page querys */
 
     .flexbox-home-page {
@@ -26,12 +30,25 @@
 
     .home-page-text-img img {
         width: 50%;
-        animation: none;
     }
 
-    .home-page-text-img img:hover {
-        width: 32%;
+    @keyframes sizeChange {
+    
+        0% {
+            width: 50%;
+        }
+        
+        50% {
+            width: 52%;
+    
+        }
+        
+        100% {
+            width: 50%;
+        }
+        
     }
+
 }
 
 @media (max-width: 450px) {
