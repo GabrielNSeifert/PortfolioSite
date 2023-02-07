@@ -2,6 +2,10 @@
     
     /* Menu queries */
 
+    .menu-list{
+        margin-top: 16px;
+    }
+
     .menu-list ul {
         font-size: 23px;
     }
@@ -10,7 +14,7 @@
         font-size: 30px;
     }
 
-    /* Homa page querys */
+    /* Home page querys */
 
     .flexbox-home-page {
         display: block;
@@ -32,21 +36,14 @@
         width: 50%;
     }
 
-    @keyframes sizeChange {
-    
-        0% {
-            width: 50%;
-        }
-        
-        50% {
-            width: 52%;
-    
-        }
-        
-        100% {
-            width: 50%;
-        }
-        
+     /* About Page queries */
+
+     .about-pass-flexbox{
+        display: block;
+    }
+
+    .pass-img-container img{
+        width: 100%;
     }
 
 }
@@ -79,6 +76,7 @@
     }
 
     /* Home page queries */
+   
 
     .home-page-text {
         font-size: 25px;
@@ -86,5 +84,23 @@
 
     .home-page-text .name {
       font-size: 35px;
+    }
+
+    /* About Page queries */
+
+    .about-page h1{
+        font-size: 35px;
+    }
+
+    .about-me-container{
+        font-size: 25px;
+    }
+
+    .about-pass-flexbox{
+        display: block;
+    }
+
+    .pass-img-container img{
+        width: 135%;
     }
 }

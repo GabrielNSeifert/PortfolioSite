@@ -7,13 +7,17 @@
     font-family: 'Satisfy', cursive;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .section {
     min-height: 100vh;
     background-color: black;
-    border-bottom: 1px solid white;
+    border: 1px solid white;
 }
 
-/* Menu Styles */
+/********* Menu Styles ******************/
 
 .menu {
     position: fixed;
@@ -52,7 +56,6 @@
     background-color: rgb(204, 204, 204);
 }
 
-
 .menu-list {
     display: none;
     position: fixed;
@@ -77,16 +80,17 @@
     margin-right: 20px;
 }
 
-.menu-list ul li:hover {
+.menu-list ul li a:hover {
     color: grey;
     transition: .5s ease-in;
 }
 
-/*   Home Page Styles     */
-
-.home-page {
-    border: 1px solid black;
+.menu-list ul li a{
+    text-decoration: none;
+    color: white;
 }
+
+/************   Home Page Styles *************/
 
 .flexbox-home-page {
     padding-top: 80px;
@@ -108,31 +112,36 @@
 }
 
 .home-page-text-img {
-    margin-top: 35px;
     min-height: 300px;
-
+    margin-top: 30px;
 }
 
 .home-page-text-img img {
     width: 20%;
-    margin: 20px;
     border-radius: 20px;
-    animation: sizeChange 4s infinite linear;
+    animation: movement 5s infinite linear;
 }
 
-@keyframes sizeChange {
+@keyframes movement {
     
     0% {
-        width: 20%;
+        margin: 0;
+    }
+
+    25%{
+        margin-left: 25px;
     }
     
     50% {
-        width: 22%;
+        margin: 0;
+    }
 
+    75%{
+        margin-right: 25px;
     }
     
     100% {
-        width: 20%;
+        margin: 0;
     }
     
 }
@@ -170,4 +179,44 @@
         border: 10px solid rgb(27, 252, 121);
     }
 
+}
+
+/* ******** Sobre mim *************/
+
+.about-page {
+    background-image: linear-gradient(to right, black,  rgb(0, 19, 9),  rgb(0, 39, 16),  rgb(0, 63, 26) );
+    text-align: center;
+}
+
+.about-page h1{
+    margin-top: 162px;
+    margin-bottom: 25px;
+    font-size: 55px;
+}
+
+.about-me-container{
+    font-size: 50px;
+}
+
+.about-pass-flexbox{
+    width: 50%;
+    display: flex;
+    margin: auto;
+}
+
+.pass-text-container{
+    margin: auto;
+    width: 50%;
+}
+
+.pass-img-container{
+    margin: auto;
+    width: 50%;
+}
+
+.selfImgKid{
+    margin:  20px auto;
+    width: 80%;
+    border-radius: 400px;
+    border: 10px solid rgb(27, 252, 121);
 }

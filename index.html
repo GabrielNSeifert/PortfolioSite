@@ -16,12 +16,11 @@
 <body>
     <header class="menu">
         <h1>Meu Portfólio</h1>
-        <img src="./assets/iconButtonOpen.png" alt="Icone do botão que abre o menu." class="menu-button"
-            title="Abrir menu">
+        <img src="./assets/iconButtonOpen.png" alt="Icone do botão que abre o menu." class="menu-button" title="Abrir menu">
         <nav class="menu-list">
             <ul>
-                <li>Home</li>
-                <li>Sobre</li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Sobre">Sobre</a></li>
                 <li>Conhecimentos</li>
                 <li>Portfólio</li>
                 <li>Contato</li>
@@ -30,18 +29,18 @@
     </header>
 
 
-    <section class="section home-page">
+    <section class="section home-page" id="Home">
         <div class="flexbox-home-page">
 
             <div class="home-page-text">
-                <p>Olá, meu nome é</p>
+                <p>Olá, meu nome é
                 <p class="name">Gabriel Neves !</p>
-                <p>Sou um estudande aficionado por</p>
-                <p>programação e desenvolvimento web.</p>
+                Sou um estudande aficionado por
+                programação e desenvolvimento web.</p>
                 <div class="home-page-text-img">
-                    <img src="./assets/javaScriptIcon.png" alt="JavaScript Logo." class="js-logo" title="">
                     <img src="./assets/htmlIcon.png" alt="HTML Logo." class="html-logo" title="">
                     <img src="./assets/cssIcon.png" alt="CSS Logo" class="css-logo" title="">
+                    <img src="./assets/javaScriptIcon.png" alt="JavaScript Logo." class="js-logo" title="">
                 </div>
             </div>
 
@@ -52,6 +51,28 @@
 
         </div>
 
+    </section>
+
+    <section class="section about-page" id="Sobre">
+        
+        <h1>Sobre mim</h1> 
+
+        <div class="about-me-container">
+
+            <div class="about-pass-flexbox">
+
+                <div class="pass-text-container">
+                    <p>Desde pequeno sempre tive<br> contato com computadores, <br> por isso sempre cultivei paixão<br> e curiosidade por esse mundo.</p>
+                </div>
+
+                <div class="pass-img-container">
+                    <img  class="selfImgKid"src="./assets/selfPictureKid3.jpg" alt="">
+                </div>
+
+            </div>
+           
+        </div>
+    
     </section>
 
     <script src="./js/script.js"></script>
